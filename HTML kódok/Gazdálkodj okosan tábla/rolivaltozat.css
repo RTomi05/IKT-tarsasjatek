@@ -12,48 +12,61 @@
     float:left
 }
 
-    
-#startM { grid-area: startM;}
-#mezo1 { grid-area: mezo1;}
-#mezo2 { grid-area: mezo2; }
-#mezo3 { grid-area: mezo3;}
-#mezo4 { grid-area: mezo4;}
-#mezo5 { grid-area: mezo5;}
-#mezo6 { grid-area: mezo6;}
-#mezo7 { grid-area: mezo7;}
-#mezo8 { grid-area: mezo8;}
-#mezo9 { grid-area: mezo9;}
-#mezo10 { grid-area: mezo10;}
-
-.nagy
+#nagy
 {
-    height:186.17px;
-    width:187.83px;
+    height:187px;
+    width:188px;
     border:1px solid black;
 }
-.kicsi
+#kicsi
 {
-    height:87.94px;
-    width:187.83px;
+    height:88px;
+    width:188px;
     border:1px solid black;
 }
 #tabla
 {
-    height:917px;
+    height:1010px;
     width:1800px;
     margin: auto;
     background-color: blue;
     border:10px solid black;
     display: grid;
-    grid-template: startM mezo1 mezo2 mezo3 mezo4 mezo5 mezo6 mezo7 mezo8 mezo9 mezo10;
+    grid-template-areas: 
+    "startM"
+    "mezo1" 
+    "mezo2" 
+    "mezo3" 
+    "mezo4"
+    "mezo5"
+    "mezo6" 
+    "mezo7" 
+    "mezo8" 
+    "mezo9" 
+    "mezo10";
+    grid-template-columns: 1fr 3fr;
+    gap: 0px;
+    padding: 0px;
 }
+
+.startM { grid-area: startM;}
+.mezo1 { grid-area: mezo1;}
+.mezo2 { grid-area: mezo2; }
+.mezo3 { grid-area: mezo3;}
+.mezo4 { grid-area: mezo4;}
+.mezo5 { grid-area: mezo5;}
+.mezo6 { grid-area: mezo6;}
+.mezo7 { grid-area: mezo7;}
+.mezo8 { grid-area: mezo8;}
+.mezo9 { grid-area: mezo9;}
+.mezo10 { grid-area: mezo10;}
 
 
 
 #tablaOszlop
 {
     display: grid;
-    grid-template-columns: start mezo1 mezo2 mezo3 mezo4 mezo5 mezo6 mezo7 mezo8 mezo9 mezo10;
+    grid-template-columns: startM, mezo1, mezo2, mezo3, mezo4, mezo5, mezo6, mezo7, mezo8, mezo9, mezo10;
 }
 
 /*
