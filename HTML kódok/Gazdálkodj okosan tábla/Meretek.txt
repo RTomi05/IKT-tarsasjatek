@@ -1,0 +1,2 @@
+Nagy mezők magasság szélesség: 1117*1127
+Kis téglalap alkú mezők magasság*szélesség: 387 * 1112
