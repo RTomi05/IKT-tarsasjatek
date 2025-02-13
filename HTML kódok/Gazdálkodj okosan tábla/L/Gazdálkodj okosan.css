@@ -70,24 +70,16 @@
 
 .startM { grid-area: startM;}
 
-.mezo1 {position:absolute; left: 0px;}
-
-
-.mezo2 {position:absolute;left: 90px;}
-
-.mezo3 {position: absolute;left: 180px;}
-
-
-.mezo4 {position:absolute;left: 270px;}
-.mezo5 {position:absolute;left: 360px; }
-
-.mezo6 {position:absolute;left: 450px;}
-.mezo7 {position:absolute;left: 540px;}
-.mezo8 {position:absolute;left: 630px;}
-.mezo9 {position:absolute;left: 720px;}
-.mezo10 {position:absolute;left: 810px;}
-.mezo11 {position:absolute;left: 900px;}
-.mezo12 {position:absolute;left: 990px;}
+.mezo1 { grid-area: mezo1;}
+.mezo2 { grid-area: mezo2;}
+.mezo3 { grid-area: mezo3;}
+.mezo32 { grid-area: mezo32;}
+.mezo32 { grid-area: mezo32;}
+.mezo32 { grid-area: mezo32;}
+.mezo32 { grid-area: mezo32;}
+.mezo32 { grid-area: mezo32;}
+.mezo32 { grid-area: mezo32;}
+.mezo32 { grid-area: mezo32;}
 
 
 
