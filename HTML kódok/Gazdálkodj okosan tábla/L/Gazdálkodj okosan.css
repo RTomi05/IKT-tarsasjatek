@@ -5,13 +5,9 @@
     border:1px solid black;
     float:right;
 }*/
-#tabla > div
-{
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    float:left
-}
 
+
+/*
 #nagy
 {
     height:187px;
@@ -34,12 +30,7 @@
 
 #tabla
 {
-    height:1010px;
-    width:1800px;
-    margin: auto;
-    background-color: blue;
-    border:10px solid black;
-    display: grid;
+
     grid-template-areas: 
     "startM"
     "mezo39" 
@@ -67,38 +58,73 @@
     gap: 0px;
     padding: 0px;
 }
+    */
 
-.startM { grid-area: startM;}
+.start { grid-area: startM;}
 
-.mezo1 { grid-area: mezo1;}
-.mezo2 { grid-area: mezo2;}
-.mezo3 { grid-area: mezo3;}
-.mezo32 { grid-area: mezo32;}
-.mezo32 { grid-area: mezo32;}
-.mezo32 { grid-area: mezo32;}
-.mezo32 { grid-area: mezo32;}
-.mezo32 { grid-area: mezo32;}
-.mezo32 { grid-area: mezo32;}
-.mezo32 { grid-area: mezo32;}
+.M1 { grid-area: m1;}
+.M2 { grid-area: m2;}
+.M3 { grid-area: m3;}
+.M4 { grid-area: m4;}
+.M5 { grid-area: m5;}
+.M6 { grid-area: m6;}
+.M7 { grid-area: m7;}
+.M8 { grid-area: m8;}
+.M9 { grid-area: m9;}
+.M10 { grid-area: m10;}
+.M11 { grid-area: m11;}
+.M12 { grid-area: m12;}
+.M13 { grid-area: m13;}
+.M14 { grid-area: m14;}
+.M15 { grid-area: m15;}
+.M16 { grid-area: m16;}
+.M17 { grid-area: m17;}
+.M18 { grid-area: m18;}
+.M19 { grid-area: m19;}
+.M20 { grid-area: m20;}
+.M21 { grid-area: m21;}
+.M22 { grid-area: m22;}
+.M23 { grid-area: m23;}
+.M24 { grid-area: m24;}
+.M25 { grid-area: m25;}
+.M26 { grid-area: m26;}
+.M27 { grid-area: m27;}
+.M28 { grid-area: m28;}
+.M29 { grid-area: m29;}
+.M30 { grid-area: m30;}
+.M31 { grid-area: m31;}
+.M32 { grid-area: m32;}
+.M33 { grid-area: m33;}
+.M34 { grid-area: m34;}
+.M35 { grid-area: m35;}
+.M36 { grid-area: m36;}
+.M37 { grid-area: m37;}
+.M38 { grid-area: m38;}
+.M39 { grid-area: m39;}
 
-
-
-
-.mezo39 { grid-area: mezo39;}
-.mezo38 { grid-area: mezo38; }
-.mezo37 { grid-area: mezo37;}
-.mezo36 { grid-area: mezo36;}
-.mezo35 { grid-area: mezo35;}
-.mezo34 { grid-area: mezo34;}
-.mezo33 { grid-area: mezo33;}
-.mezo32 { grid-area: mezo32;}
-
-
-
-#tablaOszlop
+#tabla
 {
+    height:1010px;
+    width:1800px;
+    margin: auto;
+    background-color: blue;
+    border:10px solid black;
     display: grid;
-    grid-template-columns: startM, mezo1, mezo2, mezo3, mezo4, mezo5, mezo6, mezo7, mezo8, mezo9, mezo10;
+    grid-template:
+    'm20 m21 m22 m23 m23 m23 . . m30 m30 m30 m31 m32 m33'
+    'm19 . . m24 m24 m24 m26 m27 m29 m29 m29 . . m34'
+    'm18 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m35'
+    'm17 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m36'
+    'm16 . . . . . . . . . . . . m37'
+    'm15 . . . . . . . . . . . . m38'
+    'm14 . . . . . . . . . . . . m39'
+    'm13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM';
+
+}
+#tabla > div
+{
+    background-color: #f1f1f1;
+    border: 1px solid black;
 }
 
 /*
