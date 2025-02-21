@@ -111,16 +111,14 @@
     border:10px solid black;
     display: grid;
     grid-template:
-    'm20 m20 m21 m22 m23 m23 m23 . . m30 m30 m30 m31 m32 m33 m33'
-    'm20 m20 m21 m22 m23 m23 m23 . . m30 m30 m30 m31 m32 m33 m33'
-    'm19 m19 . . m24 m24 m24 m26 m27 m29 m29 m29 . . m34 m34'
-    'm18 m18 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m35 m35'
-    'm17 m17 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m36 m36'
-    'm16 m16 . . . . . . . . . . . . m37 m37'
-    'm15 m15 . . . . . . . . . . . . m38 m38'
-    'm14 m14 . . . . . . . . . . . . m39 m39'
-    'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM'
-    'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM';
+    'm20 m21 m22 m23 m23 m23 . . m30 m30 m30 m31 m32 m33'
+    'm19 . . m24 m24 m24 m26 m27 m29 m29 m29 . . m34'
+    'm18 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m35'
+    'm17 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m36'
+    'm16 . . . . . . . . . . . . m37'
+    'm15 . . . . . . . . . . . . m38'
+    'm14 . . . . . . . . . . . . m39'
+    'm13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM';
 
 }
 #tabla > div
