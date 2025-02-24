@@ -100,21 +100,32 @@ background-size: cover;
     background-size: cover;}
 
 .M24 { grid-area: m24;}
+
 .M25 { grid-area: m25;
     background-image: url(Képek/25.jpg);
     background-size: cover;}
+
 .M26 { grid-area: m26;}
 .M27 { grid-area: m27;}
-.M28 { grid-area: m28;}
+
+.M28 { grid-area: m28;
+    background-image: url(Képek/28.png);
+    background-size: cover;
+}
 .M29 { grid-area: m29;}
-.M30 { grid-area: m30;background-image: url(Képek/30.png);
+
+.M30 { grid-area: m30;
+    background-image: url(Képek/30.png);
     background-size: cover;}
+
 .M31 { grid-area: m31;}
 .M32 { grid-area: m32;}
+
 .M33 { grid-area: m33;
 background-image: url(Képek/33.png);
 background-size: cover;
 }
+
 .M34 { grid-area: m34;}
 .M35 { grid-area: m35;}
 .M36 { grid-area: m36;}
@@ -150,8 +161,50 @@ background-size: cover;
     border: 1px solid black;
 }
 
-#M1
-{background-color: blue;}
+.szam {grid-area:szamHelye;}
+.kep{grid-area:kepHelye;}
+.szoveg{grid-area:szovegHelye;}
+
+.kismezoV
+{
+    display:grid;
+    grid-template:
+    'szamHelye'
+    'kepHelye'
+    'kepHelye'
+    'kepHelye'
+    'szovegHelye'
+    'szovegHelye';
+}
+
+.kismezoV
+{
+    display:grid;
+    grid-template:
+    'szovegHelye'
+    'szovegHelye'
+    'kepHelye'
+    'kepHelye'
+    'kepHelye'
+    'szamHelye';
+}
+
+.kismezoF
+{
+    display:grid;
+    grid-template:
+    'szovegHelye szovegHelye kepHelye kepHelye kepHelye szamHelye';
+}
+
+.kismezoV > div
+{
+    border:1px solid black;
+}
+
+.kismezoF > div
+{
+    border:1px solid black;
+}
 /*
 #tablaSorFelso
 {
