@@ -88,20 +88,33 @@ background-size: cover;
 .M17 { grid-area: m17;}
 .M18 { grid-area: m18;}
 .M19 { grid-area: m19;}
-.M20 { grid-area: m20;}
+
+.M20 { grid-area: m20;
+background-image: url(Képek/20.jpg);
+background-size: cover;
+}
 .M21 { grid-area: m21;}
 .M22 { grid-area: m22;}
-.M23 { grid-area: m23;}
+.M23 { grid-area: m23;
+    background-image: url(Képek/23.jpg);
+    background-size: cover;}
+
 .M24 { grid-area: m24;}
-.M25 { grid-area: m25;}
+.M25 { grid-area: m25;
+    background-image: url(Képek/25.jpg);
+    background-size: cover;}
 .M26 { grid-area: m26;}
 .M27 { grid-area: m27;}
 .M28 { grid-area: m28;}
 .M29 { grid-area: m29;}
-.M30 { grid-area: m30;}
+.M30 { grid-area: m30;background-image: url(Képek/30.png);
+    background-size: cover;}
 .M31 { grid-area: m31;}
 .M32 { grid-area: m32;}
-.M33 { grid-area: m33;}
+.M33 { grid-area: m33;
+background-image: url(Képek/33.png);
+background-size: cover;
+}
 .M34 { grid-area: m34;}
 .M35 { grid-area: m35;}
 .M36 { grid-area: m36;}
