@@ -60,7 +60,10 @@
 }
     */
 
-.start { grid-area: startM;}
+.start { grid-area: startM;
+background-image: url("start.png");
+background-size:cover;
+}
 
 .M1 { grid-area: m1;}
 .M2 { grid-area: m2;}
@@ -74,7 +77,11 @@
 .M10 { grid-area: m10;}
 .M11 { grid-area: m11;}
 .M12 { grid-area: m12;}
-.M13 { grid-area: m13;}
+
+.M13 { grid-area: m13;
+background-image: url("Képek/13.png");
+background-size: cover;
+}
 .M14 { grid-area: m14;}
 .M15 { grid-area: m15;}
 .M16 { grid-area: m16;}
@@ -102,6 +109,8 @@
 .M38 { grid-area: m38;}
 .M39 { grid-area: m39;}
 
+
+
 #tabla
 {
     height:1010px;
@@ -125,10 +134,11 @@
 }
 #tabla > div
 {
-    background-color: #f1f1f1;
     border: 1px solid black;
 }
 
+#M1
+{background-color: blue;}
 /*
 #tablaSorFelso
 {
