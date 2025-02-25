@@ -1,0 +1,224 @@
+
+
+.start { grid-area: startM;
+background-image: url("start.png");
+background-size:cover;
+}
+
+.M1 { grid-area: m1;background-color: #aa6752;}
+.M2 { grid-area: m2;background-color: #ff4a3b;}
+.M3 { grid-area: m3;background-color: #ffc643;}
+.M4 { grid-area: m4;background-color: #70b95b;}
+.M5 { grid-area: m5;background-color: #7eccca;}
+.M6 { grid-area: m6;background-color: #af6a52;}
+.M7 { grid-area: m7;background-color: #6ecbce;}
+.M8 { grid-area: m8;background-color: #62b147;}
+.M9 { grid-area: m9;background-color: #ff4f3f;}
+.M10 { grid-area: m10;background-color: #ffd337;}
+.M11 { grid-area: m11;background-color: #b66150;}
+.M12 { grid-area: m12;background-color: #54ad47;}
+
+.M13 { grid-area: m13;
+background-image: url("Képek/13.png");
+background-size: cover;
+}
+.M14 { grid-area: m14;background-color:#b37057;}
+.M15 { grid-area: m15;background-color:#ff4c41;}
+.M16 { grid-area: m16;background-color:#f3ba41;}
+.M17 { grid-area: m17;background-color:#218199;}
+.M18 { grid-area: m18;background-color:#895525;}
+.M19 { grid-area: m19;background-color:#298635;}
+
+.M20 { grid-area: m20;
+background-image: url(Képek/20.jpg);
+background-size: cover;
+}
+.M21 { grid-area: m21;background-color:#d7b800;}
+.M22 { grid-area: m22;background-color:#e04817;}
+.M23 { grid-area: m23;
+    background-image: url(Képek/23.jpg);
+    background-size: cover;}
+
+.M24 { grid-area: m24;background-color:#55b2c3;}
+
+.M25 { grid-area: m25;
+    background-image: url(Képek/25.jpg);
+    background-size: cover;}
+
+.M26 { grid-area: m26;background-color:#9a6a39;}
+.M27 { grid-area: m27;background-color:#ffd83f;}
+
+.M28 { grid-area: m28;
+    background-image: url(Képek/28.png);
+    background-size: cover;
+}
+.M29 { grid-area: m29;background-color:#73bf5a;}
+
+.M30 { grid-area: m30;
+    background-image: url(Képek/30.png);
+    background-size: cover;}
+
+.M31 { grid-area: m31;background-color:#ff463d;}
+.M32 { grid-area: m32;background-color:#86dfe3;}
+
+.M33 { grid-area: m33;
+background-image: url(Képek/33.png);
+background-size: cover;
+}
+
+.M34 { grid-area: m34;background-color:#ffd93f;}
+.M35 { grid-area: m35;background-color:#ff4e3c;}
+.M36 { grid-area: m36;background-color:#97654a;}
+.M37 { grid-area: m37;background-color:#97654a;}
+.M38 { grid-area: m38;background-color:#ffd63f;}
+.M39 { grid-area: m39;background-color:#7fd3d2;}
+
+
+
+#tabla
+{
+    height:1010px;
+    width:1800px;
+    margin: auto;
+    background-color: blue;
+    border:10px solid black;
+    display: grid;
+    grid-template:
+    'm20 m20 m21 m22 m23 m23 m23 . . m30 m30 m30 m31 m32 m33 m33'
+    'm20 m20 m21 m22 m23 m23 m23 . . m30 m30 m30 m31 m32 m33 m33'
+    'm19 m19 . . m24 m24 m24 m26 m27 m29 m29 m29 . . m34 m34'
+    'm18 m18 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m35 m35'
+    'm17 m17 . . m25 m25 m25 m26 m27 m28 m28 m28 . . m36 m36'
+    'm16 m16 . . . . . . . . . . . . m37 m37'
+    'm15 m15 . . . . . . . . . . . . m38 m38'
+    'm14 m14 . . . . . . . . . . . . m39 m39'
+    'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM'
+    'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM';
+
+}
+
+#tabla > div
+{
+    border: 1px solid black;
+}
+
+.szam {grid-area:szamHelye;}
+.kep{grid-area:kepHelye;}
+.szoveg{grid-area:szovegHelye;}
+
+.kismezoV
+{
+    display:grid;
+    grid-template:
+    'szamHelye'
+    'kepHelye'
+    'kepHelye'
+    'kepHelye'
+    'szovegHelye'
+    'szovegHelye';
+}
+
+.kismezoV-
+{
+    display:grid;
+    grid-template:
+    'szovegHelye'
+    'szovegHelye'
+    'kepHelye'
+    'kepHelye'
+    'kepHelye'
+    'szamHelye';
+}
+
+.kismezoF
+{
+    display:grid;
+    grid-template:
+    'szovegHelye szovegHelye kepHelye kepHelye kepHelye szamHelye';
+}
+.kismezoFJ
+{
+    display:grid;
+    grid-template:
+    'szamHelye kepHelye kepHelye kepHelye szovegHelye szovegHelye';
+}
+
+.kismezoV > div
+{
+    border:1px solid black;
+}
+
+.kismezoF > div
+{
+    border:1px solid black;
+}
+.kismezoFJ > div
+{
+    border:1px solid black;
+}
+
+.kismezoV- > div
+{
+    border:1px solid black;
+}
+
+.M1 > .kep{background-image: url(Képek/1.png);background-size: cover;}
+.M2 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M3 > .kep{background-image: url(Képek/3.png);background-size: cover;background-position: 0% 50%;}
+.M4 > .kep{background-image: url(Képek/4.png);background-size: cover;background-position: 0% 30%;}
+.M5 > .kep{background-image: url(Képek/5.png);background-size: cover;}
+.M6 > .kep{background-image: url(Képek/6.png);background-size: cover;background-position: 0% 40%;}
+.M7 > .kep{background-image: url(Képek/7.png);background-size: cover;background-position: 0% 40%;}
+.M8 > .kep{background-image: url(Képek/8.png);background-size: cover;}
+.M9 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M10 > .kep{background-image: url(Képek/10..png);background-size: cover;background-position: 0% 90%;}
+.M11 > .kep{background-image: url(Képek/11.png);background-size: cover;}
+.M12 > .kep{background-image: url(Képek/12.png);background-size: cover;}
+.M14 > .kep{background-image: url(Képek/14.png);background-size: cover;background-position: 0% 40%}
+.M15 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M16 > .kep{background-image: url(Képek/16.png);background-size: cover;}
+.M17 > .kep{background-image: url(Képek/17.jpg);background-size: cover;background-position: 0% 50%;}
+.M18 > .kep{background-image: url(Képek/18.jpg);background-size: cover;background-position: 0% 50%;}
+.M19 > .kep{background-image: url(Képek/19.jpg);background-size: cover;background-position: 0% 40%;}
+
+.M21 > .kep{background-image: url(Képek/21.jpg);background-size: cover;background-position: 30% 20%;}
+.M22 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+
+.M24 > .kep{background-image: url(Képek/24.jpg);background-size: cover;background-position: 0% 50%;}
+
+.M26 > .kep{background-image: url(Képek/26.jpg);background-size: cover;background-position: 50% 50%;}
+
+/*
+#tablaSorFelso
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;   
+    row-gap: 0px;
+}
+*/
+
+/*
+#nagybox
+{
+    background-color: #f1f1f1;
+    border: 1px solid black;
+
+    text-align: center;
+}
+#kisboxOszlop{
+
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    height:87.94px;
+    width:187.83px;
+    text-align: center;
+}
+
+#kisboxSor
+{
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    width:87.94px;
+    height:187.83px;
+    text-align: center;
+}*/
