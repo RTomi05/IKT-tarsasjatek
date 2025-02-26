@@ -5,6 +5,11 @@ background-image: url("start.png");
 background-size:cover;
 }
 
+.szCard
+{
+    grid-area: szCard;
+}
+
 .M1 { grid-area: m1;background-color: #aa6752;}
 .M2 { grid-area: m2;background-color: #ff4a3b;}
 .M3 { grid-area: m3;background-color: #ffc643;}
@@ -19,7 +24,7 @@ background-size:cover;
 .M12 { grid-area: m12;background-color: #54ad47;}
 
 .M13 { grid-area: m13;
-background-image: url("Képek/13.png");
+background-image: url("Kepek/13.png");
 background-size: cover;
 }
 .M14 { grid-area: m14;background-color:#b37057;}
@@ -30,40 +35,42 @@ background-size: cover;
 .M19 { grid-area: m19;background-color:#298635;}
 
 .M20 { grid-area: m20;
-background-image: url(Képek/20.jpg);
+background-image: url(Kepek/20.jpg);
 background-size: cover;
+background-position: 0% 20%;
 }
 .M21 { grid-area: m21;background-color:#d7b800;}
 .M22 { grid-area: m22;background-color:#e04817;}
 .M23 { grid-area: m23;
-    background-image: url(Képek/23.jpg);
+    background-image: url(Kepek/23.jpg);
     background-size: cover;}
 
 .M24 { grid-area: m24;background-color:#55b2c3;}
 
 .M25 { grid-area: m25;
-    background-image: url(Képek/25.jpg);
+    background-image: url(Kepek/25.jpg);
     background-size: cover;}
 
 .M26 { grid-area: m26;background-color:#9a6a39;}
 .M27 { grid-area: m27;background-color:#ffd83f;}
 
 .M28 { grid-area: m28;
-    background-image: url(Képek/28.png);
+    background-image: url(Kepek/28.png);
     background-size: cover;
 }
 .M29 { grid-area: m29;background-color:#73bf5a;}
 
 .M30 { grid-area: m30;
-    background-image: url(Képek/30.png);
+    background-image: url(Kepek/30.png);
     background-size: cover;}
 
 .M31 { grid-area: m31;background-color:#ff463d;}
 .M32 { grid-area: m32;background-color:#86dfe3;}
 
 .M33 { grid-area: m33;
-background-image: url(Képek/33.png);
+background-image: url(Kepek/33.png);
 background-size: cover;
+background-position: 0% 40%;
 }
 
 .M34 { grid-area: m34;background-color:#ffd93f;}
@@ -162,32 +169,44 @@ background-size: cover;
     border:1px solid black;
 }
 
-.M1 > .kep{background-image: url(Képek/1.png);background-size: cover;}
-.M2 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
-.M3 > .kep{background-image: url(Képek/3.png);background-size: cover;background-position: 0% 50%;}
-.M4 > .kep{background-image: url(Képek/4.png);background-size: cover;background-position: 0% 30%;}
-.M5 > .kep{background-image: url(Képek/5.png);background-size: cover;}
-.M6 > .kep{background-image: url(Képek/6.png);background-size: cover;background-position: 0% 40%;}
-.M7 > .kep{background-image: url(Képek/7.png);background-size: cover;background-position: 0% 40%;}
-.M8 > .kep{background-image: url(Képek/8.png);background-size: cover;}
-.M9 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
-.M10 > .kep{background-image: url(Képek/10..png);background-size: cover;background-position: 0% 90%;}
-.M11 > .kep{background-image: url(Képek/11.png);background-size: cover;}
-.M12 > .kep{background-image: url(Képek/12.png);background-size: cover;}
-.M14 > .kep{background-image: url(Képek/14.png);background-size: cover;background-position: 0% 40%}
-.M15 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
-.M16 > .kep{background-image: url(Képek/16.png);background-size: cover;}
-.M17 > .kep{background-image: url(Képek/17.jpg);background-size: cover;background-position: 0% 50%;}
-.M18 > .kep{background-image: url(Képek/18.jpg);background-size: cover;background-position: 0% 50%;}
-.M19 > .kep{background-image: url(Képek/19.jpg);background-size: cover;background-position: 0% 40%;}
+.M1 > .kep{background-image: url(Kepek/1.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M2 > .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M3 > .kep{background-image: url(Kepek/3.png);background-size: cover;background-position: 0% 50%;}
+.M4 > .kep{background-image: url(Kepek/4.png);background-size: contain;background-position: 0% 0%;background-color: #fdf1c7;background-repeat: no-repeat;}
+.M5 > .kep{background-image: url(Kepek/5.png);background-size: contain;background-position: 0% 0%;background-color: #fdf1c7;background-repeat: no-repeat;}
+.M6 > .kep{background-image: url(Kepek/6.png);background-size: contain;background-position: 40% 40%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M7 > .kep{background-image: url(Kepek/7.png);background-size: contain;background-position: 30% 0%;background-color: #fdf1c7;background-repeat: no-repeat;}
+.M8 > .kep{background-image: url(Kepek/8.png);background-size: contain;background-position: 30% 0%;background-color: #fdf1c7;background-repeat: no-repeat;}
+.M9 > .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M10 > .kep{background-image: url(Kepek/10..png);background-size: contain;background-position: 40% 90%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M11 > .kep{background-image: url(Kepek/11.png);background-size: cover;}
+.M12 > .kep{background-image: url(Kepek/12.png);background-size: contain;background-position: 40% 90%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M14 > .kep{background-image: url(Kepek/14.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M15 > .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M16 > .kep{background-image: url(Kepek/16.png);background-size: cover;}
+.M17 > .kep{background-image: url(Kepek/17.jpg);background-size: contain;background-position: 50% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M18 > .kep{background-image: url(Kepek/18.jpg);background-size: cover;background-position: 0% 50%;}
+.M19 > .kep{background-image: url(Kepek/19.jpg);background-size: cover;background-position: 0% 40%;}
 
-.M21 > .kep{background-image: url(Képek/21.jpg);background-size: cover;background-position: 30% 20%;}
-.M22 > .kep{background-image: url(Képek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M21 > .kep{background-image: url(Kepek/21.jpg);background-size: cover;background-position: 30% 20%;}
+.M22 > .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
 
-.M24 > .kep{background-image: url(Képek/24.jpg);background-size: cover;background-position: 0% 50%;}
+.M24 > .kep{background-image: url(Kepek/24.jpg);background-size: contain;background-position: 50% 0%;background-color: #fdf1c7;background-repeat: no-repeat;}
 
-.M26 > .kep{background-image: url(Képek/26.jpg);background-size: cover;background-position: 50% 50%;}
+.M26 > .kep{background-image: url(Kepek/26.jpg);background-size: contain;background-position: 0% 40%;background-color: #fdf1c7;background-repeat: no-repeat;}
+.M27 > .kep{background-image: url(Kepek/27.png);background-size: contain;background-position: 50% 50%;background-color: #fff5d0;background-repeat: no-repeat;}
 
+.M29 > .kep{background-image: url(Kepek/29.png);background-size: cover;background-position: 0% 50%;}
+
+.M31 > .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M32 > .kep{background-image: url(Kepek/32.png);background-size: cover;background-position: 0% 50%;}
+
+.M34 > .kep{background-image: url(Kepek/34.png);background-size: contain;background-position: 50% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M35 > .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
+.M36 > .kep{background-image: url(Kepek/36.png);background-size: contain;background-position: 50% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M37 > .kep{background-image: url(Kepek/37.png);background-size: cover;background-position: 0% 50%;}
+.M38 > .kep{background-image: url(Kepek/38.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
+.M39 > .kep{background-image: url(Kepek/39.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
 /*
 #tablaSorFelso
 {
