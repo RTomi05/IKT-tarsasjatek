@@ -1,47 +1,89 @@
+let jatekosok = [
+    {nev: "játékos1", penz: 0}, 
+    {nev: "játékos2", penz: 0}, 
+    {nev: "játékos3", penz: 0}
+];
 
-//aktuális játékos meghatározása
+//aktuális játékos indexe (0, 1, 2)
+let aktualisJatekosIndex = 0;
 
-let aktualisJatekos = ""; //játékos1 vagy játékos 2 vagy játékos 3
+// szerencsekártya
+function szerencsekartya() {
 
-//játékosok pénze kezdésnél
+    const szerencsepakli = ["Kapsz 2000-t.", "Kapsz 3000-t."];
+    const szerencseErtekek = [2000, 3000];
 
-function startPenz()
-{
-	let jatekos1Penz = 0;
-	let jatekos2Penz = 0;
-	let jatekos3Penz = 0;
-}
-
-//játékosok pénze tranzakciónál
-
-function szerencsekartya()
-{
-	let aktualisKartya = "";
-
-	const szerencsepakli = ["Kapsz 2000-t.", "Kapsz 3000-t."];
-	const szerencseErtekek = [1,2];
     let szerencseErtek = Math.floor(Math.random() * szerencsepakli.length);
     let kapottSzerencse = szerencseErtekek[szerencseErtek];
-    console.log("A kapott kártya indexe: " + kapottSzerencse);
+    console.log("A kapott kártya: " + szerencsepakli[szerencseErtek]);
 
-	console.log(szerencsepakli[kapottSzerencse - 1]);
+    jatekosok[aktualisJatekosIndex].penz += kapottSzerencse;
 
-	if (actualisJatekos = "játékos1")
-	{
-		jatekos1Penz= jatekos1Penz + aktualisKartya;
-	}
-	else if (actualisJatekos = "játékos2")
-	{
-		jatekos2Penz= jatekos2Penz + aktualisKartya;
-	}
+    kiirPenz();
 
-	else if (actualisJatekos = "játékos3")
-	{
-		jatekos3Penz= jatekos3Penz + aktualisKartya;
-	}
+    aktualisJatekosIndex = (aktualisJatekosIndex + 1) % jatekosok.length;
 }
 
-//startPenz();
+function kiirPenz() {
+    console.log("Játékosok pénzei:");
+    for (let i = 0; i < jatekosok.length; i++) {
+        console.log(`${jatekosok[i].nev} pénze: ${jatekosok[i].penz}`);
+    }
+}
 
-proba = proba + aktualisKartya
-console.log(proba);
+// Könyvutalvány
+document.addEventListener('DOMContentLoaded', function() {
+    konyvutalvany();
+});
+
+function konyvutalvany() {
+    let mezo = document.getElementsByClassName("M24");
+    console.log(`Van ${mezo.length} M24-es mező!`);
+}
+
+// Kezdő pénz kiírása
+console.log("Kezdeti pénzek:");
+
+// A bábú elem
+const babu = document.getElementById("babu");
+
+// A "Start" pozíció megtalálása
+const start = document.getElementsByClassName("start");
+
+// Kezdeti bábú helyzet a "Start" osztályban
+let babuIsClickable = true;  // Alapértelmezetten nem kattintható
+
+// Az M classokra kattintás esemény figyelése
+const mElements = document.querySelectorAll('.M');
+
+// A bábú mozgása az M classra
+function moveBabuTo(positionElement) {
+    const position = positionElement.getBoundingClientRect();
+    babu.style.left = position.left + 'px';
+    babu.style.top = position.top + 'px';
+}
+
+// Ha rákattintasz a bábúra, akkor kezd el mozogni
+babu.addEventListener('click', () => {
+    babuIsClickable = true;  // Innentől kezdve kattintható lesz
+});
+
+// Kattintás az M class elemekre
+mElements.forEach(element => {
+    element.addEventListener('click', (event) => {
+        if (babuIsClickable) {
+            moveBabuTo(element);  // A bábú oda kerül, ahol az M classra kattintottak
+        }
+    });
+});
+
+// Kezdő pozíció beállítása a Start-ra
+function setBabuStartPosition() {
+    const startPosition = start.getBoundingClientRect();
+    babu.style.left = startPosition.left + 'px';
+    babu.style.top = startPosition.top + 'px';
+}
+
+// Az oldal betöltésekor állítsuk be a bábú kezdőpozícióját
+setBabuStartPosition();
+

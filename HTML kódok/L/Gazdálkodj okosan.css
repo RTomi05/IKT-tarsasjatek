@@ -207,37 +207,15 @@ background-position: 0% 40%;
 .M37 > .kep{background-image: url(Kepek/37.png);background-size: cover;background-position: 0% 50%;}
 .M38 > .kep{background-image: url(Kepek/38.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
 .M39 > .kep{background-image: url(Kepek/39.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
-/*
-#tablaSorFelso
-{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;   
-    row-gap: 0px;
-}
-*/
 
-/*
-#nagybox
-{
-    background-color: #f1f1f1;
-    border: 1px solid black;
-
-    text-align: center;
-}
-#kisboxOszlop{
-
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    height:87.94px;
-    width:187.83px;
-    text-align: center;
+#babu {
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    pointer-events: none; 
 }
 
-#kisboxSor
-{
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    width:87.94px;
-    height:187.83px;
-    text-align: center;
-}*/
+#babu img {
+    width: 100%;
+    height: 100%;
+}
