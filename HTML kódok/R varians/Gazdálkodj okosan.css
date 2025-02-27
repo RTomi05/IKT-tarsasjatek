@@ -209,10 +209,12 @@ background-position: 0% 40%;
 .M39 > .kep{background-image: url(Kepek/39.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
 
 #babu {
+    width: 200px;
+    height: 200px;
     position: absolute;
-    width: 50px; 
-    height: 50px; 
-    pointer-events: none; 
+    background: red;
+    top: 10px;
+    left: 10px;
 }
 
 #babu img {
