@@ -87,15 +87,3 @@ function setBabuStartPosition() {
 // Az oldal betöltésekor állítsuk be a bábú kezdőpozícióját
 setBabuStartPosition();
 
-function mezokirak()
-{
-    let tabla = document.getElementsById("tabla");
-
-    for(let i = 1;i < 40;i++)
-    {
-        tabla.innerHTML += `
-            <div class="M${i}" >
-                <div class="szam">${i}</div><div class="mezoKep kep"></div><div class="szoveg"></div>
-            </div>`
-    }
-}
