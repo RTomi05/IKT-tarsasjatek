@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gazdálkodj okosan!</title>
-    <script src="./penzes.js"></script>
-    <script src="./dobokocka.js"></script>
+    <script src="./mindenes.js"></script>
 
-    <link rel="stylesheet" href="./Gazdálkodj okosan.css?v=1">
+    <link rel="stylesheet" href="./Gazdálkodj okosan.css">
 
     <!--<link rel="stylesheet" href="./rolivaltozat.css">-->
 </head>
 <body>
-    <div id="tabla">
-        <div class="start">Start</div> 
-        <div id="babu" class="babu">
-          <img src="./Kepek/Kekbabu.png" alt="bábú">
-    <script>szerencsekartya()
-        initialClick()
-    </script>
+
     <div id="tabla">
         
             <!--Alsó sor-->
-            <div class="start" ></div>
+            <div class="start" >
+                <div id="babu" class="babu">
+                <img src="./Kepek/Kekbabu.png" alt="bábú">
+                </div>
+            </div>
 
             <div class="M1 kismezoV" >
                 <div class="szam"></div>
@@ -229,6 +226,12 @@
         </div>
 
     </div>
-
+    <script>
+        window.onload = function () {
+            szerencsekartya();
+            BabuMozgatas();
+            dobokocka();
+        };
+    </script>
 </body>
 </html>
