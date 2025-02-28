@@ -29,10 +29,22 @@
 
             for(let i = 1;i < 40;i++)
             {
-                tabla.innerHTML += `
+                if(i < 14)
+                {
+                    tabla.innerHTML += `
                     <div class="M${i}" >
                         <div class="szam">${i}</div><div class="mezoKep kep"></div><div class="szoveg"></div>
                     </div>`
+                }
+                else if(i > 20)
+                {
+                    tabla.innerHTML += `
+                    <div class="M${i}" >
+                        <div class="szam">${i}</div><div class="mezoKepV kep"></div><div class="szoveg"></div>
+                    </div>`
+                }
+
+
             }
         }
 
