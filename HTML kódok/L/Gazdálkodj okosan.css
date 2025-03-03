@@ -192,7 +192,7 @@ background-position: 0% 40%;
 .M21 .kep{background-image: url(Kepek/21.jpg);}
 .M22 .kep{background-image: url(Kepek/szerencseM.png);}
 
-.M2 .kep{background-image: url(Kepek/24.jpg);}
+.M24 .kep{background-image: url(Kepek/24.jpg);}
 
 .M26 .kep{background-image: url(Kepek/26.jpg);}
 .M27 .kep{background-image: url(Kepek/27.png);}
@@ -208,12 +208,6 @@ background-position: 0% 40%;
 .M37 .kep{background-image: url(Kepek/37.png);}
 .M38 .kep{background-image: url(Kepek/38.png);}
 .M39 .kep{background-image: url(Kepek/39.png);}
-
-
-.M1 .kep{
-    background-image: url(Kepek/1.png);
-
-}
 
 
 
@@ -236,11 +230,6 @@ background-position: 0% 40%;
 .szam{
     border:1px solid red !important;
 }
-
-
-
-
-
 
 #babu {
     position: absolute;
