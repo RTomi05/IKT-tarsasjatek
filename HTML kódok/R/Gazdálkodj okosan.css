@@ -3,6 +3,7 @@
 .start { grid-area: startM;
 background-image: url("start.png");
 background-size:cover;
+transform: rotate(90);
 }
 
 .szCard
@@ -213,6 +214,11 @@ background-position: 0% 40%;
     height: 200px;
     position: absolute;
 
+
+}
+.kekbabu
+{
+    transform:rotate();
 }
 
 #babu img {

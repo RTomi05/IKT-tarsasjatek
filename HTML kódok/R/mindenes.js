@@ -1,3 +1,4 @@
+
 let jatekosok = [
     {nev: "Játékos1", penz: 0}, 
     {nev: "Játékos2", penz: 0}, 
@@ -23,7 +24,7 @@ function szerencsekartya() {
     kiirPenz();
 
     randomJatekosIndex = (randomJatekosIndex + 1) % jatekosok.length;
-}
+}szerencsekartya();
 
 function kiirPenz() {
     console.log("Játékosok pénzei:");
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function konyvutalvany() {
+    // ellenőrzés
     let mezo = document.getElementsByClassName("M24 kismezoFJ");
     console.log(`Van ${mezo.length} M24-es mező!`);
 }
@@ -63,8 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+
     function dobokocka() {
         return Math.floor(Math.random() * 6) + 1; // Dobókocka értéke 1-6 között
+        
     }
 
     function BabuMozgatas(lepesek) {
@@ -84,17 +88,25 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             console.error("Hibás mező index:", JelenlegiPozicio);
         }
-    }
+        
+    } 
 
     document.body.addEventListener("click", () => {
         let DobasEredmeny = dobokocka();
         console.log(`Dobott szám: ${DobasEredmeny}`);
         BabuMozgatas(DobasEredmeny);
         console.log(`Új pozíció: ${JelenlegiPozicio +1 }`);
+        if (JelenlegiPozicio >= 13) {
+            document.querySelector('.kekbabu').style.transform = 'rotate(90deg)'; 
+        }
+        if (JelenlegiPozicio >= 13) {
+            document.getElementById('babu')
+        }
     });
 });
 
-// kezdő pénz
+
+/* random pénz generálás
 let penzek = [
     ...Array(1).fill(20000),  // 1 db 20 000 Ft
     ...Array(1).fill(10000),  // 1 db 10 000 Ft
@@ -109,6 +121,7 @@ for (let i = 0; i < penzek.length; i++) {
     let jatekosIndex = i % jatekosok.length;
     jatekosok[jatekosIndex].penz += penzek[i];
 }
+*/
 
 
 
