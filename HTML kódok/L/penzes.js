@@ -46,7 +46,14 @@ let JelenlegiPozicio = -1;
 let babu;
 
 document.addEventListener("DOMContentLoaded", () => {
+    /* Egyenlőre ez jó
     const mezo = document.querySelectorAll("[class^='M']");
+    */
+    const mezo = [...document.querySelectorAll("[class^='M']")]; // NodeList átalakítása tömbbé
+
+    // Új elem létrehozása és hozzáadása a listához
+    const startElem = document.querySelector(".start"); 
+    if (startElem) mezo.splice(40, 0, startElem); // 40. helyre beszúrjuk
     babu = document.getElementById("babu");
     
     if (!babu) {
@@ -67,23 +74,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function BabuMozgatas(lepesek) {
         JelenlegiPozicio += lepesek;
-        if (JelenlegiPozicio >= mezo.length) {
-            JelenlegiPozicio = mezo.length; // Ne lépje túl a mezőket
-
-        }
-
-        /*if (JelenlegiPozicio <= 1) {
-            JelenlegiPozicio = -1;
-        }*/
-
+        JelenlegiPozicio %= mezo.length; // Ha túllépi a 40-et, akkor visszamegy az elejére
+    
         const UjMezo = mezo[JelenlegiPozicio];
         if (UjMezo) {
             UjMezo.prepend(babu);
-        } /*else {
+        } else {
             console.error("Hibás mező index:", JelenlegiPozicio);
-        }*/
-        
-    } 
+        }
+    }
+    
 
     document.body.addEventListener("click", () => {
         let DobasEredmeny = dobokocka();   
@@ -112,7 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         
-        document.querySelector('.kekbabu').style.transform = rotationValue;
+        //document.querySelector('.kekbabu').style.transform = rotationValue;
+        document.getElementById('babu').style.transform = rotationValue;
 
     });
 });
