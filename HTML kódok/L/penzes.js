@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const UjMezo = mezo[JelenlegiPozicio];
         if (UjMezo) {
-            UjMezo.appendChild(babu);
+            UjMezo.prepend(babu);
         } /*else {
             console.error("Hibás mező index:", JelenlegiPozicio);
         }*/
