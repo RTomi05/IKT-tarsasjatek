@@ -101,7 +101,6 @@ background-position: 0% 40%;
     'm14 m14 . . . . . . . . . . . . m39 m39'
     'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM'
     'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM';
-
 }
 
 #tabla div
@@ -151,8 +150,8 @@ background-position: 0% 40%;
 .M39 .kep{background-image: url(Kepek/39.png);}
 
 
-
 .mezoKep {
+    grid-area: mkep;
     background-size: contain;
     background-position: center center;
     background-color: #ffe9c1;
@@ -163,12 +162,29 @@ background-position: 0% 40%;
 
 
 .szam{
+    grid-area: mszam;
     border:1px solid red !important;
     text-align: center;
     font-size: 20px;
     
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.szoveg
+{
+    grid-area: mszoveg;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.balOldal
+{
+    display:grid;
+    grid-template:
+    'mszoveg mkep mszam'
+    
+}
+
 
 
 

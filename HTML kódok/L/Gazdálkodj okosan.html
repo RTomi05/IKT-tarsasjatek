@@ -35,11 +35,27 @@
 
             for(let i = 1;i < 40;i++)
             {
-                if(nagyMezok.includes(i) == false)
+                if(nagyMezok.includes(i) == false && i<13)
                 {
                     tabla.innerHTML += `
                     <div class="M${i}" >
-                        <div class="szam">${i}</div><div class="mezoKep kep "></div><div class="szoveg"></div>
+                        <div class="szam">${i}</div><div class="mezoKep kep"></div><div class="szoveg"></div>
+                    </div>`
+                }
+                else if(i > 13 && i < 20)
+                {
+                    tabla.innerHTML += `
+                    <div class="M${i}" >
+                        <div class="balOldal">
+                            <div class="szam">${i}</div><div class="mezoKep kep "></div><div class="szoveg"></div>
+                        </div>
+                    </div>`
+                }
+                else if(nagyMezok.includes(i) == false && i>20)
+                {
+                    tabla.innerHTML += `
+                    <div class="M${i}" >
+                        <div class="szam">${i}</div><div class="mezoKep kep"></div><div class="szoveg"></div>
                     </div>`
                 }
                 else
