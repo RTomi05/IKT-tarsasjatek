@@ -192,28 +192,22 @@ background-position: 0% 40%;
 .M21 .kep{background-image: url(Kepek/21.jpg);}
 .M22 .kep{background-image: url(Kepek/szerencseM.png);}
 
-.M2 .kep{background-image: url(Kepek/24.jpg);background-size: contain;background-position: 50% 0%;background-color: #fdf1c7;background-repeat: no-repeat;}
+.M24 .kep{background-image: url(Kepek/24.jpg);}
 
-.M26 .kep{background-image: url(Kepek/26.jpg);background-size: contain;background-position: 0% 40%;background-color: #fdf1c7;background-repeat: no-repeat;}
-.M27 .kep{background-image: url(Kepek/27.png);background-size: contain;background-position: 50% 50%;background-color: #fff5d0;background-repeat: no-repeat;}
+.M26 .kep{background-image: url(Kepek/26.jpg);;}
+.M27 .kep{background-image: url(Kepek/27.png);;}
 
-.M29 .kep{background-image: url(Kepek/29.png);background-size: cover;background-position: 0% 50%;}
+.M29 .kep{background-image: url(Kepek/29.png);}
 
-.M31 .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
-.M32 .kep{background-image: url(Kepek/32.png);background-size: cover;background-position: 0% 50%;}
+.M31 .kep{background-image: url(Kepek/szerencseM.png);}
+.M32 .kep{background-image: url(Kepek/32.png);}
 
-.M34 .kep{background-image: url(Kepek/34.png);background-size: contain;background-position: 50% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
-.M35 .kep{background-image: url(Kepek/szerencseM.png);background-size: cover;background-position: 0% 50%;}
-.M36 .kep{background-image: url(Kepek/36.png);background-size: contain;background-position: 50% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
-.M37 .kep{background-image: url(Kepek/37.png);background-size: cover;background-position: 0% 50%;}
-.M38 .kep{background-image: url(Kepek/38.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
-.M39 .kep{background-image: url(Kepek/39.png);background-size: contain;background-position: 0% 0%;background-color: #ffe9c1;background-repeat: no-repeat;}
-
-
-.M1 .kep{
-    background-image: url(Kepek/1.png);
-
-}
+.M34 .kep{background-image: url(Kepek/34.png);}
+.M35 .kep{background-image: url(Kepek/szerencseM.png);}
+.M36 .kep{background-image: url(Kepek/36.png);}
+.M37 .kep{background-image: url(Kepek/37.png);}
+.M38 .kep{background-image: url(Kepek/38.png);}
+.M39 .kep{background-image: url(Kepek/39.png);}
 
 
 
