@@ -12,11 +12,15 @@
 </head>
 <body>
 
-    <script>szerencsekartya()</script>
+    <script></script>
 
     <div id="tabla">
 
-            <div class="start" ></div>
+            <div class="start" >
+                <div id="babu">
+                    <img src="./Kepek/Kekbabu.png" alt="bábú" class="kekbabu">
+                    </div>
+            </div>
 
 
         </div>
@@ -27,9 +31,38 @@
         {
             let tabla = document.getElementById("tabla");
 
+            const nagyMezok = [13,20,23,25,28,30,33];
+
             for(let i = 1;i < 40;i++)
             {
+<<<<<<< HEAD
                 if(i != 13 && i != 20 && i != 23 && i != 25 && i != 28 && i != 30 && i != 33 )
+=======
+                if(nagyMezok.includes(i) == false && i<13)
+>>>>>>> 62eafd64ee2a7ab50f37de46e25f415974bc4f06
+                {
+                    tabla.innerHTML += `
+                    <div class="M${i}" >
+                        <div class="szam">${i}</div><div class="mezoKep kep"></div><div class="szoveg"></div>
+                    </div>`
+                }
+<<<<<<< HEAD
+                else
+                {
+                    tabla.innerHTML += `
+                    <div class="M${i}" ></div>`
+                }
+
+                
+=======
+                else if(i > 13 && i < 20)
+                {
+                    tabla.innerHTML += `
+                    <div class="M${i}" >
+                        <div class="balOldal"><div class="szam">${i}</div><div class="mezoKep kep "></div><div class="szoveg"></div></div>
+                    </div>`
+                }
+                else if(nagyMezok.includes(i) == false && i>20)
                 {
                     tabla.innerHTML += `
                     <div class="M${i}" >
@@ -39,14 +72,17 @@
                 else
                 {
                     tabla.innerHTML += `
-                    <div class="M${i}" ></div>`
+                    <div class="M${i}">
+                    </div>`
                 }
-
                 
+
+
+>>>>>>> 62eafd64ee2a7ab50f37de46e25f415974bc4f06
             }
         }
 
-mezokirak();
+        mezokirak();
 </script>
 </body>
 </html>
