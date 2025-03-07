@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazdálkodj okosan!</title>
+    <script src="./penzes.js"></script>
+
+    <link rel="stylesheet" href="./Gazdálkodj okosan.css?v=1">
+
+    <!--<link rel="stylesheet" href="./rolivaltozat.css">-->
+</head>
+<body>
+
+    <script></script>
+
+    <div id="tabla">
+
+            <div class="start" >
+                <div id="babu">
+                    <img src="./Kepek/Kekbabu.png" alt="bábú" class="kekbabu">
+                    </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script>
+        function mezokirak()
+        {
+            let tabla = document.getElementById("tabla");
+
+            for(let i = 1;i < 40;i++)
+            {
+                    tabla.innerHTML += `
+                    <div class="M${i} mezo" >
+                        <div class="szam">${i}</div><div class="mezoKep kep"></div><div class="szoveg"></div>
+                    </div>`
+        }
+    }
+
+        mezokirak();
+</script>
+</body>
+</html>

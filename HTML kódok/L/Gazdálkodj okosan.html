@@ -31,7 +31,7 @@
         {
             let tabla = document.getElementById("tabla");
 
-            const nagyMezok = [13,20,23,25,28,30,33]
+            const nagyMezok = [13,20,23,25,28,30,33];
 
             for(let i = 1;i < 40;i++)
             {
@@ -46,9 +46,7 @@
                 {
                     tabla.innerHTML += `
                     <div class="M${i}" >
-                        <div class="balOldal">
-                            <div class="szam">${i}</div><div class="mezoKep kep "></div><div class="szoveg"></div>
-                        </div>
+                        <div class="balOldal"><div class="szam">${i}</div><div class="mezoKep kep "></div><div class="szoveg"></div></div>
                     </div>`
                 }
                 else if(nagyMezok.includes(i) == false && i>20)

@@ -10,6 +10,11 @@ background-size:cover;
     grid-area: szCard;
 }
 
+.mezo {
+    grid-area: mkep;
+    background-size: contain;
+}
+
 .M1 { grid-area: m1;background-color: #aa6752;}
 .M2 { grid-area: m2;background-color: #ff4a3b;}
 .M3 { grid-area: m3;background-color: #ffc643;}
@@ -76,7 +81,7 @@ background-position: 0% 40%;
 .M34 { grid-area: m34;background-color:#ffd93f;}
 .M35 { grid-area: m35;background-color:#ff4e3c;}
 .M36 { grid-area: m36;background-color:#97654a;}
-.M37 { grid-area: m37;background-color:#97654a;}
+.M37 { grid-area: m37;background-color:#97654a;background-image: url(Kepek/37.png);}
 .M38 { grid-area: m38;background-color:#ffd63f;}
 .M39 { grid-area: m39;background-color:#7fd3d2;}
 
@@ -108,7 +113,7 @@ background-position: 0% 40%;
     border: 1px solid black;
 }
 
-
+/*
 .M1 .kep{background-image: url(Kepek/1.png);}
 .M2 .kep{background-image: url(Kepek/szerencseM.png);}
 .M3 .kep{background-image: url(Kepek/3.png);}
@@ -148,72 +153,7 @@ background-position: 0% 40%;
 .M37 .kep{background-image: url(Kepek/37.png);}
 .M38 .kep{background-image: url(Kepek/38.png);}
 .M39 .kep{background-image: url(Kepek/39.png);}
-
-
-.mezoKep {
-    grid-area: mkep;
-    background-size: contain;
-    background-position: center center;
-    background-color: #ffe9c1;
-    background-repeat: no-repeat;
-    height: 50%;
-}
-
-
-
-.szam{
-    grid-area: mszam;
-    border:1px solid red !important;
-    text-align: center;
-    font-size: 20px;
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.szoveg
-{
-    grid-area: mszoveg;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.balOldal
-{
-    display:grid;
-    grid-template:
-    'mszoveg mszoveg mszoveg mkep mkep mkep mszam'
-    
-}
-
-.balOldal .mezoKep {
-    grid-area: mkep;
-    background-size: contain;
-    background-position: center center;
-    background-color: #ffe9c1;
-    background-repeat: no-repeat;
-    height:400%;
-
-}
-
-.balOldal .szam{
-    grid-area: mszam;
-    border:0px solid red !important;
-    text-align: center;
-    font-size: 20px;
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height:400%;
-    width:fit-content
-}
-
-.balOldal .szoveg{
-    grid-area: mszoveg;
-    border:1px solid red !important;
-    text-align: center;
-    font-size: 20px;
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+*/
 
 
 
