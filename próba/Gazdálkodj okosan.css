@@ -50,7 +50,7 @@ background-position: 0% 20%;
     background-image: url(Kepek/23.jpg);
     background-size: cover;}
 
-.M24 { grid-area: m24;background-image: url(Kepek/24.jpg);}
+.M24 { grid-area: m24;background-image: url(Kepek/24.jpg);background-position: 30%;}
 
 .M25 { grid-area: m25;
     background-image: url(Kepek/25.jpg);
