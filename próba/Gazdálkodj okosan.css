@@ -1,7 +1,7 @@
 
 
 .start { grid-area: startM;
-background-image: url("start.png");
+background-image: url("Kepek/start.png");
 background-size:cover;
 }
 
@@ -12,45 +12,45 @@ background-size:cover;
 
 .mezo {
     grid-area: mkep;
-    background-size: contain;
+    background-size: cover;
 }
 
-.M1 { grid-area: m1;background-color: #aa6752;}
-.M2 { grid-area: m2;background-color: #ff4a3b;}
-.M3 { grid-area: m3;background-color: #ffc643;}
-.M4 { grid-area: m4;background-color: #70b95b;}
-.M5 { grid-area: m5;background-color: #7eccca;}
-.M6 { grid-area: m6;background-color: #af6a52;}
-.M7 { grid-area: m7;background-color: #6ecbce;}
-.M8 { grid-area: m8;background-color: #62b147;}
-.M9 { grid-area: m9;background-color: #ff4f3f;}
-.M10 { grid-area: m10;background-color: #ffd337;}
-.M11 { grid-area: m11;background-color: #b66150;}
-.M12 { grid-area: m12;background-color: #54ad47;}
+.M1 { grid-area: m1;background-image: url(Kepek/1.png);}
+.M2 { grid-area: m2;background-image: url(Kepek/2.png);}
+.M3 { grid-area: m3;background-image: url(Kepek/3.png);}
+.M4 { grid-area: m4;background-image: url(Kepek/4.png);}
+.M5 { grid-area: m5;background-image: url(Kepek/5.png);}
+.M6 { grid-area: m6;background-image: url(Kepek/6.png);}
+.M7 { grid-area: m7;background-image: url(Kepek/7.png);}
+.M8 { grid-area: m8;background-image: url(Kepek/8.png);}
+.M9 { grid-area: m9;background-image: url(Kepek/9.png);}
+.M10 { grid-area: m10;background-image: url(Kepek/10.png);}
+.M11 { grid-area: m11;background-image: url(Kepek/11.png);}
+.M12 { grid-area: m12;background-image: url(Kepek/12.png);}
 
 .M13 { grid-area: m13;
-background-image: url("Kepek/13.png");
+    background-image: url(Kepek/13.png);;
 background-size: cover;
 }
-.M14 { grid-area: m14;background-color:#b37057;}
-.M15 { grid-area: m15;background-color:#ff4c41;}
-.M16 { grid-area: m16;background-color:#f3ba41;}
-.M17 { grid-area: m17;background-color:#218199;}
-.M18 { grid-area: m18;background-color:#895525;}
-.M19 { grid-area: m19;background-color:#298635;}
+.M14 { grid-area: m14;background-image: url(Kepek/14.png);}
+.M15 { grid-area: m15;background-image: url(Kepek/15.png);}
+.M16 { grid-area: m16;background-image: url(Kepek/16.png);}
+.M17 { grid-area: m17;background-image: url(Kepek/17.jpg);}
+.M18 { grid-area: m18;background-image: url(Kepek/18.jpg);}
+.M19 { grid-area: m19;background-image: url(Kepek/19.jpg);}
 
 .M20 { grid-area: m20;
 background-image: url(Kepek/20.jpg);
 background-size: cover;
 background-position: 0% 20%;
 }
-.M21 { grid-area: m21;background-color:#d7b800;}
-.M22 { grid-area: m22;background-color:#e04817;}
+.M21 { grid-area: m21;background-image: url(Kepek/21.jpg);}
+.M22 { grid-area: m22;background-image: url(Kepek/22.jpg);}
 .M23 { grid-area: m23;
     background-image: url(Kepek/23.jpg);
     background-size: cover;}
 
-.M24 { grid-area: m24;background-color:#55b2c3;}
+.M24 { grid-area: m24;background-image: url(Kepek/24.jpg);}
 
 .M25 { grid-area: m25;
     background-image: url(Kepek/25.jpg);
@@ -114,7 +114,7 @@ background-position: 0% 40%;
 }
 
 /*
-.M1 .kep{background-image: url(Kepek/1.png);}
+.M1 .kep{}
 .M2 .kep{background-image: url(Kepek/szerencseM.png);}
 .M3 .kep{background-image: url(Kepek/3.png);}
 .M4 .kep{background-image: url(Kepek/4.png);}
