@@ -1,7 +1,7 @@
 
 
 .start { grid-area: startM;
-background-image: url("start.png");
+background-image: url("Kepek/startM.png");
 background-size:cover;
 }
 
@@ -12,15 +12,15 @@ background-size:cover;
 
 .mezo {
     grid-area: mkep;
-    background-size: contain;
+    background-size:cover;
 }
 
-.M1 { grid-area: m1;background-color: #aa6752;}
-.M2 { grid-area: m2;background-color: #ff4a3b;}
-.M3 { grid-area: m3;background-color: #ffc643;}
-.M4 { grid-area: m4;background-color: #70b95b;}
-.M5 { grid-area: m5;background-color: #7eccca;}
-.M6 { grid-area: m6;background-color: #af6a52;}
+.M1 { grid-area: m1;background-image: url(Kepek/1.png);}
+.M2 { grid-area: m2;background-image: url(Kepek/2.png);}
+.M3 { grid-area: m3;background-image: url(Kepek/3.png);}
+.M4 { grid-area: m4;background-image: url(Kepek/4.png);}
+.M5 { grid-area: m5;background-image: url(Kepek/5.png);}
+.M6 { grid-area: m6;background-image: url(Kepek/6.png);}
 .M7 { grid-area: m7;background-color: #6ecbce;}
 .M8 { grid-area: m8;background-color: #62b147;}
 .M9 { grid-area: m9;background-color: #ff4f3f;}
@@ -80,10 +80,10 @@ background-position: 0% 40%;
 
 .M34 { grid-area: m34;background-color:#ffd93f;}
 .M35 { grid-area: m35;background-color:#ff4e3c;}
-.M36 { grid-area: m36;background-color:#97654a;}
-.M37 { grid-area: m37;background-color:#97654a;background-image: url(Kepek/37.png);}
-.M38 { grid-area: m38;background-color:#ffd63f;}
-.M39 { grid-area: m39;background-color:#7fd3d2;}
+.M36 { grid-area: m36;}
+.M37 { grid-area: m37;background-image: url(Kepek/37.png);}
+.M38 { grid-area: m38;background-image: url(Kepek/38.png);}
+.M39 { grid-area: m39;background-image: url(Kepek/39.png);}
 
 
 
