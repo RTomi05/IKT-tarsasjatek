@@ -86,13 +86,21 @@ background-position: 0% 40%;
 .M38 { grid-area: m38;background-image: url(Kepek/38.png);}
 .M39 { grid-area: m39;background-image: url(Kepek/39.png);}
 
-
+#szovegHelye
+{margin: auto;
+border:4px solid black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: justify;
+height:500px;
+width:800px;
+font-size: 50px;
+}
 
 #tabla
 {
+    margin: auto;
     height:1010px;
     width:1800px;
-    margin: auto;
     background-color: blue;
     border:10px solid black;
     display: grid;
@@ -113,51 +121,6 @@ background-position: 0% 40%;
 {
     border: 1px solid black;
 }
-
-/*
-.M1 .kep{}
-.M2 .kep{background-image: url(Kepek/szerencseM.png);}
-.M3 .kep{background-image: url(Kepek/3.png);}
-.M4 .kep{background-image: url(Kepek/4.png);}
-
-.M5 .kep{background-image: url(Kepek/5.png);}
-.M6 .kep{background-image: url(Kepek/6.png);}
-.M7 .kep{background-image: url(Kepek/7.png);}
-.M8 .kep{background-image: url(Kepek/8.png);}
-.M9 .kep{background-image: url(Kepek/szerencseM.png);}
-.M10 .kep{background-image: url(Kepek/10..png);}
-.M11 .kep{background-image: url(Kepek/11.png);}
-.M12 .kep{background-image: url(Kepek/12.png);}
-.M14 .kep{background-image: url(Kepek/14.png);}
-.M15 .kep{background-image: url(Kepek/szerencseM.png);}
-.M16 .kep{background-image: url(Kepek/16.png);}
-.M17 .kep{background-image: url(Kepek/17.jpg);}
-.M18 .kep{background-image: url(Kepek/18.jpg);}
-.M19 .kep{background-image: url(Kepek/19.jpg);}
-
-.M21 .kep{background-image: url(Kepek/21.jpg);}
-.M22 .kep{background-image: url(Kepek/szerencseM.png);}
-
-.M24 .kep{background-image: url(Kepek/24.jpg);}
-
-.M26 .kep{background-image: url(Kepek/26.jpg);}
-.M27 .kep{background-image: url(Kepek/27.png);}
-
-.M29 .kep{background-image: url(Kepek/29.png);}
-
-.M31 .kep{background-image: url(Kepek/szerencseM.png);}
-.M32 .kep{background-image: url(Kepek/32.png);}
-
-.M34 .kep{background-image: url(Kepek/34.png);}
-.M35 .kep{background-image: url(Kepek/szerencseM.png);}
-.M36 .kep{background-image: url(Kepek/36.png);}
-.M37 .kep{background-image: url(Kepek/37.png);}
-.M38 .kep{background-image: url(Kepek/38.png);}
-.M39 .kep{background-image: url(Kepek/39.png);}
-*/
-
-
-
 
 #babu {
     position: absolute;
