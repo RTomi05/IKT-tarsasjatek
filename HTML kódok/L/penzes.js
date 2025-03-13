@@ -72,6 +72,35 @@ document.addEventListener("DOMContentLoaded", () => {
         
     }
 
+    const szovegek = [
+        "Szemeteltél. Fizess 100 Ft-ot.",
+        "Húzz egy szerencsekártyát!",
+        "Takarékoskodj! Betéteid után 5% kamatot kapsz.",
+        "Vásárolhatsz! Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.",
+        "Csöpög a csap, és baromira nem akarod megszerelni. Egy dobásból kimaradsz!",
+        "A Dohányzás káros. Hogy jobban eszedbe vésd, fizess 1.000 Ft-ot.",
+        "Vásárolhatsz! Árak a 4. és a 29. mezők szerint.",
+        "Élet- és lakásbiztosítást köthetsz. Életbiztosítás: 1.000 Ft. Lakásbiztosítás: 900 Ft.",
+        "Húzz egy szerencsekártyát!",
+        "MÁV-val utazol. Lépj a 15-ös mezőre!",
+        "Dobhatsz még egyszer!",
+        "Postázod a legújabb Lady Gaga lemezt. Lépj előre két mezőt!",
+        "Lakásodat berendezheted. Árak a 4. és a 29. mezők szerint.",
+        "Szövetkezeti lakásépítés. Fizess be 30.000 Ft-ot, majd a maradék 40.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
+        "Húzz egy szerencsekártyát!",
+        "Ha kötöttél életbiztosítást, vegyél fel 3.000 Ft-ot!",
+        "Kölcsönözhetsz! Rádió: 1.200 Ft. Mosógép: 3.000 Ft.Televízió: 4.000 Ft.",
+        "Vásárolj mozi (300 Ft) és színházjegyet (450 Ft)!",
+        "Minden reggel tornázol. Jutalmul lépj előre három mezőt.",
+        "Sétarepülésre mentél. Lépj a 22-es mezőre!",
+        "Rendszeresen tisztálkodsz, jutalmul még egyszer dobhatsz!",
+        "Húzz egy szerencsekártyát!",
+        "Segítettél egy idős embernek. Jutalmul még egyszer dobhatsz!",
+        "Könyvutalványt vásárolhatsz. Ára: 500 Ft.",
+        "Vidámparkba mentél. Fizess 5.000 Ft.ot!",
+        ]
+
+
     function BabuMozgatas(lepesek) {
         JelenlegiPozicio += lepesek;
         JelenlegiPozicio %= mezo.length; // Ha túllépi a 40-et, akkor visszamegy az elejére
@@ -82,6 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             console.error("Hibás mező index:", JelenlegiPozicio);
         }
+
+        document.getElementById("szovegHelye").innerHTML = szovegek[JelenlegiPozicio]
     }
     
 
