@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Vásárolhatsz! Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.",
         "Csöpög a csap, és baromira nem akarod megszerelni. Egy dobásból kimaradsz!",
         "A Dohányzás káros. Hogy jobban eszedbe vésd, fizess 1.000 Ft-ot.",
-        "Vásárolhatsz! Árak a 4. és a 29. mezők szerint.",
+        "Vásárolhatsz! Árak a 4. és a 29. mezők szerint.<br> <button onclick='showthePrices()'>Mutasd az árakat!</button>",
         "Élet- és lakásbiztosítást köthetsz. Életbiztosítás: 1.000 Ft. Lakásbiztosítás: 900 Ft.",
         "Húzz egy szerencsekártyát!",
         "MÁV-val utazol. Lépj a 15-ös mezőre!",
@@ -100,6 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "Vidámparkba mentél. Fizess 5.000 Ft.ot!",
         ]
 
+    function showthePrices()
+    {
+        document.getElementById("szovegHelye").innerHTML = szovegek[4]+="Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.";
+
+    }
 
     function BabuMozgatas(lepesek) {
         JelenlegiPozicio += lepesek;
