@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
 
-    document.body.addEventListener("click", () => {
+    document.getElementById("katt").addEventListener("click", () => {
         let DobasEredmeny = dobokocka();   
         /*
         if (DobasEredmeny == 1) {
