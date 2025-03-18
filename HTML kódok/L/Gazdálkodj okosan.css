@@ -86,15 +86,15 @@ background-position: 0% 40%;
 .M38 { grid-area: m38;background-image: url(Kepek/38.png);}
 .M39 { grid-area: m39;background-image: url(Kepek/39.png);}
 
-#szovegHelye
+/*#szovegHelye
 {margin: auto;
 border:4px solid black;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 text-align: justify;
-height:500px;
-width:800px;
+height:300px;
+width:1000px;
 font-size: 50px;
-}
+}*/
 
 #tabla
 {
@@ -133,4 +133,26 @@ font-size: 50px;
     width: 100%;
     height: 100%;
     border: none;
+}
+
+li
+{
+    margin-left: 20px;
+}
+
+.dobasGomb {grid-area:dobas};
+.szovegHelye {grid-area:szoveg};
+.szerencseKartyaH {grid-area:szerencse};
+
+#alsoBlokk
+{
+    display: grid;
+    width:1800px;
+    height:500px;
+    grid-template-columns: dobas szoveg szoveg szerencse;
+}
+
+#alsoBlokk div
+{
+    border: 2px solid black;
 }
