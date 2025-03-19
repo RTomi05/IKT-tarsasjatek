@@ -13,6 +13,7 @@ background-size:cover;
 .mezo {
     grid-area: mkep;
     background-size: cover;
+    border: 1px solid black;
 }
 
 .M1 { grid-area: m1;background-image: url(Kepek/1.png);}
@@ -99,8 +100,8 @@ font-size: 50px;
 #tabla
 {
     margin: auto;
-    height:1010px;
-    width:1800px;
+    height:646px;
+    width:1152px;
     background-color: blue;
     border:10px solid black;
     display: grid;
@@ -117,15 +118,16 @@ font-size: 50px;
     'm13 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 startM startM';
 }
 
+/*
 #tabla div
 {
     border: 1px solid black;
 }
-
+*/
 #babu {
     position: absolute;
-    width: 100px; 
-    height: 177px; 
+    width: 75px; 
+    height: 75px; 
     pointer-events: none;
 }
 
@@ -140,19 +142,21 @@ li
     margin-left: 20px;
 }
 
-.dobasGomb {grid-area:dobas};
-.szovegHelye {grid-area:szoveg};
-.szerencseKartyaH {grid-area:szerencse};
 
 #alsoBlokk
 {
-    display: grid;
-    width:1800px;
-    height:500px;
-    grid-template-columns: dobas szoveg szoveg szerencse;
+    display:grid;
+    width:1440px;
+    height:180px;
+    grid-template-columns: 500px 800px auto;
+    margin: auto;
 }
 
 #alsoBlokk div
 {
     border: 2px solid black;
+
 }
+
+
+

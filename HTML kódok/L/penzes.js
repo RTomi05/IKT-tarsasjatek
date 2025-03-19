@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const szovegek = [
-        "1. sSzemeteltél. Fizess 100 Ft-ot.",
+        "1. Szemeteltél. Fizess 100 Ft-ot.",
         "2. Húzz egy szerencsekártyát!",
         "3. Takarékoskodj! Betéteid után 5% kamatot kapsz.",
         "4. Vásárolhatsz! Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.",
