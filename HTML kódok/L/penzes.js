@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "24. Könyvutalványt vásárolhatsz. Ára: 500 Ft.",
         "25. Vidámparkba mentél. Fizess 5.000 Ft.ot!",
         "26. Társasház lakásépítés. Fizess be 40.000 Ft-ot, majd a maradék 30.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
+        
         ]
 
     function showthePrices()
