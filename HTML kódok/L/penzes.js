@@ -99,14 +99,21 @@ document.addEventListener("DOMContentLoaded", () => {
         "24. Könyvutalványt vásárolhatsz. Ára: 500 Ft.",
         "25. Vidámparkba mentél. Fizess 5.000 Ft.ot!",
         "26. Társasház lakásépítés. Fizess be 40.000 Ft-ot, majd a maradék 30.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
-        
+        "27. Lépj előre egy mezőt!",
+        "28. Közlekedési versenyen első lettél. Dobhatsz még egyszer!",
+        "29. Bútor- és sportbolt <br> Termékek:<ul><li>Szobabútor: 25.000 Ft.</li><li>Konyhabútor: 20.000 Ft.</li><li>Pingpong asztal: 4.000 Ft.</li><li>Kerékpár: 5.000 Ft.</li></ul>",
+        "30. Nyári táborban pihensz. Egy körből kimaradsz!",
+        "31. Húzz egy szerencsekártyát!",
+        "32. Jó helyezést értél el egy versenyen. Kapsz 1.000 Ft-ot!",
+        "33. Figyelmesen körülnéztél. Lépj a 2-es mezőre!",
+        "34. Vásárolhatsz! <br> <ul><li>Hűtőgép: 9.000 Ft.<</li><li>Mosógép: 8.000 Ft.</li><li>Televízió: 12.000 Ft.</li><li>Rádió: 3.000 Ft.</li>li>Porszívó: 2.000 Ft.</li></ul>",
+        "35. Húzz egy szerencsekártyát!",
+        "36. Múzeumi látogatást tettél. Fizess 500 Ft-ot.",
+        "37. Kitöltöttél egy keresztrejtvényt. Lépj előre két mezőt!",
+        "38. Élelmiszert vásároltál. Fizess 650 Ft-ot.",
+        "39. Kirándulást tettél a családoddal. Jutalmul dobhatsz még egyszer!",
+        "Start <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
         ]
-
-    function showthePrices()
-    {
-        document.getElementById("szovegHelye").innerHTML = szovegek[4]+="Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.";
-
-    }
 
     function BabuMozgatas(lepesek) {
         JelenlegiPozicio += lepesek;

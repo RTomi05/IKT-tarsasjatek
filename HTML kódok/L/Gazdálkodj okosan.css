@@ -146,17 +146,29 @@ li
 #alsoBlokk
 {
     display:grid;
-    width:1440px;
+    width:1152px;
     height:180px;
-    grid-template-columns: 500px 800px auto;
+    grid-template-columns: 200px 600px auto;
     margin: auto;
 }
 
 #alsoBlokk div
 {
     border: 2px solid black;
-
 }
 
+#szerencseKartyaH
+{
+    background-image: url(./Kepek/szerencse.png);
+    background-size: cover;
+}
+#katt
+{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 
