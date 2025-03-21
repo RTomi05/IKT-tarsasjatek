@@ -1,48 +1,16 @@
 
-const szovegek = [
-    "1. Szemeteltél. Fizess 100 Ft-ot.",
-    "2. Húzz egy szerencsekártyát!",
-    "3. Takarékoskodj! Betéteid után 5% kamatot kapsz.",
-    "4. Vásárolhatsz! Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.",
-    "5. Csöpög a csap, és baromira nem akarod megszerelni. Egy dobásból kimaradsz!",
-    "6. A Dohányzás káros. Hogy jobban eszedbe vésd, fizess 1.000 Ft-ot.",
-    "7. Vásárolhatsz!  <br> Árak: <ul><li>Hűtőgép: 9.000 Ft.;</li><li>Mosógép: 8.000 Ft.;</li><li>Televízió: 12.000 Ft.;</li><li>Rádió: 3.000 Ft.;</li><li>Porszívó: 2.000 Ft.</li></ul>",
-    "8. Élet- és lakásbiztosítást köthetsz. Életbiztosítás: 1.000 Ft. Lakásbiztosítás: 900 Ft.",
-    "9. Húzz egy szerencsekártyát!",
-    "10. MÁV-val utazol. Lépj a 15-ös mezőre!",
-    "11. Dobhatsz még egyszer!",
-    "12. Postázod a legújabb Lady Gaga lemezt. Lépj előre két mezőt!",
-    "13. Lakásodat berendezheted. <br> Árak: <ul><li>Hűtőgép: 9.000 Ft.;</li><li>Mosógép: 8.000 Ft.;</li><li>Televízió: 12.000 Ft.;</li><li>Rádió: 3.000 Ft.;</li><li>Porszívó: 2.000 Ft.</li></ul>",
-    "14. Szövetkezeti lakásépítés. Fizess be 30.000 Ft-ot, majd a maradék 40.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
-    "15. Húzz egy szerencsekártyát!",
-    "16. Ha kötöttél életbiztosítást, vegyél fel 3.000 Ft-ot!",
-    "17. Kölcsönözhetsz! Rádió: 1.200 Ft. Mosógép: 3.000 Ft.Televízió: 4.000 Ft.",
-    "18. Vásárolj mozi (300 Ft) és színházjegyet (450 Ft)!",
-    "19. Minden reggel tornázol. Jutalmul lépj előre három mezőt.",
-    "20. Sétarepülésre mentél. Lépj a 22-es mezőre!",
-    "21. Rendszeresen tisztálkodsz, jutalmul még egyszer dobhatsz!",
-    "22. Húzz egy szerencsekártyát!",
-    "23. Segítettél egy idős embernek. Jutalmul még egyszer dobhatsz!",
-    "24. Könyvutalványt vásárolhatsz. Ára: 500 Ft.",
-    "25. Vidámparkba mentél. Fizess 5.000 Ft.ot!",
-    "26. Társasház lakásépítés. Fizess be 40.000 Ft-ot, majd a maradék 30.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
-    "27. Lépj előre egy mezőt!",
-    "28. Közlekedési versenyen első lettél. Dobhatsz még egyszer!",
-    "29. Bútor- és sportbolt <br> Termékek:<ul> <li>Szobabútor: 25.000 Ft.</li><li>Konyhabútor: 20.000 Ft.</li><li>Pingpong asztal: 4.000 Ft.</li><li>Kerékpár: 5.000 Ft.</li> </ul>",
-    "30. Nyári táborban pihensz. Egy körből kimaradsz!",
-    "31. Húzz egy szerencsekártyát!",
-    "32. Jó helyezést értél el egy versenyen. Kapsz 1.000 Ft-ot!",
-    "33. Figyelmesen körülnéztél. Lépj a 2-es mezőre!",
-    "34. Vásárolhatsz! <br> <ul><li>Hűtőgép: 9.000 Ft.</li><li>Mosógép: 8.000 Ft.</li><li>Televízió: 12.000 Ft.</li><li>Rádió: 3.000 Ft.</li><li>Porszívó: 2.000 Ft.</li></ul>",
-    "35. Húzz egy szerencsekártyát!",
-    "36. Múzeumi látogatást tettél. Fizess 500 Ft-ot.",
-    "37. Kitöltöttél egy keresztrejtvényt. Lépj előre két mezőt!",
-    "38. Élelmiszert vásároltál. Fizess 650 Ft-ot.",
-    "39. Kirándulást tettél a családoddal. Jutalmul dobhatsz még egyszer!",
-    "Start <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
-    ];
 
-class Jatekos{
+
+
+
+let jatekosok = [
+    {nev: "Játékos1", penz: 0}, 
+    {nev: "Játékos2", penz: 0}, 
+    {nev: "Játékos3", penz: 0}
+];
+
+
+class jatekos{
     constructor(nev,kep)
     {
         this.nev = nev;
@@ -75,21 +43,6 @@ class Jatekos{
         }
     }
 }
-
-let jatekosok = [new Jatekos("Játékos1","./Kepek/kekbabu.png"), 
-    new Jatekos("Játékos2","./Kepek/sargababu.png"), new Jatekos("Játékos3","./Kepek/pirosbabu.png")
-];
-
-function kockadobas()
-{
-    return Math.floor(Math.random()*7);
-}
-
-
-
-
-jatekosok[0].leptet(kockadobas());
-//console.log(jatekosok[0].pozicio);
 
 
 // Aktuális játékos indexe (0, 1, 2)
@@ -159,6 +112,48 @@ document.addEventListener("DOMContentLoaded", () => {
         
     }
 
+    const szovegek = [
+        "1. Szemeteltél. Fizess 100 Ft-ot.",
+        "2. Húzz egy szerencsekártyát!",
+        "3. Takarékoskodj! Betéteid után 5% kamatot kapsz.",
+        "4. Vásárolhatsz! Hűtőgép: 9.000 Ft.; Mosógép: 8.000 Ft.; Televízió: 12.000 Ft.; Rádió: 3.000 Ft.; Porszívó: 2.000 Ft.",
+        "5. Csöpög a csap, és baromira nem akarod megszerelni. Egy dobásból kimaradsz!",
+        "6. A Dohányzás káros. Hogy jobban eszedbe vésd, fizess 1.000 Ft-ot.",
+        "7. Vásárolhatsz!  <br> Árak: <ul><li>Hűtőgép: 9.000 Ft.;</li><li>Mosógép: 8.000 Ft.;</li><li>Televízió: 12.000 Ft.;</li><li>Rádió: 3.000 Ft.;</li><li>Porszívó: 2.000 Ft.</li></ul>",
+        "8. Élet- és lakásbiztosítást köthetsz. Életbiztosítás: 1.000 Ft. Lakásbiztosítás: 900 Ft.",
+        "9. Húzz egy szerencsekártyát!",
+        "10. MÁV-val utazol. Lépj a 15-ös mezőre!",
+        "11. Dobhatsz még egyszer!",
+        "12. Postázod a legújabb Lady Gaga lemezt. Lépj előre két mezőt!",
+        "13. Lakásodat berendezheted. <br> Árak: <ul><li>Hűtőgép: 9.000 Ft.;</li><li>Mosógép: 8.000 Ft.;</li><li>Televízió: 12.000 Ft.;</li><li>Rádió: 3.000 Ft.;</li><li>Porszívó: 2.000 Ft.</li></ul>",
+        "14. Szövetkezeti lakásépítés. Fizess be 30.000 Ft-ot, majd a maradék 40.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
+        "15. Húzz egy szerencsekártyát!",
+        "16. Ha kötöttél életbiztosítást, vegyél fel 3.000 Ft-ot!",
+        "17. Kölcsönözhetsz! Rádió: 1.200 Ft. Mosógép: 3.000 Ft.Televízió: 4.000 Ft.",
+        "18. Vásárolj mozi (300 Ft) és színházjegyet (450 Ft)!",
+        "19. Minden reggel tornázol. Jutalmul lépj előre három mezőt.",
+        "20. Sétarepülésre mentél. Lépj a 22-es mezőre!",
+        "21. Rendszeresen tisztálkodsz, jutalmul még egyszer dobhatsz!",
+        "22. Húzz egy szerencsekártyát!",
+        "23. Segítettél egy idős embernek. Jutalmul még egyszer dobhatsz!",
+        "24. Könyvutalványt vásárolhatsz. Ára: 500 Ft.",
+        "25. Vidámparkba mentél. Fizess 5.000 Ft.ot!",
+        "26. Társasház lakásépítés. Fizess be 40.000 Ft-ot, majd a maradék 30.000 Ft-ot körönként törleszd minimum 2.000 Ft-tal!",
+        "27. Lépj előre egy mezőt!",
+        "28. Közlekedési versenyen első lettél. Dobhatsz még egyszer!",
+        "29. Bútor- és sportbolt <br> Termékek:<ul> <li>Szobabútor: 25.000 Ft.</li><li>Konyhabútor: 20.000 Ft.</li><li>Pingpong asztal: 4.000 Ft.</li><li>Kerékpár: 5.000 Ft.</li> </ul>",
+        "30. Nyári táborban pihensz. Egy körből kimaradsz!",
+        "31. Húzz egy szerencsekártyát!",
+        "32. Jó helyezést értél el egy versenyen. Kapsz 1.000 Ft-ot!",
+        "33. Figyelmesen körülnéztél. Lépj a 2-es mezőre!",
+        "34. Vásárolhatsz! <br> <ul><li>Hűtőgép: 9.000 Ft.</li><li>Mosógép: 8.000 Ft.</li><li>Televízió: 12.000 Ft.</li><li>Rádió: 3.000 Ft.</li><li>Porszívó: 2.000 Ft.</li></ul>",
+        "35. Húzz egy szerencsekártyát!",
+        "36. Múzeumi látogatást tettél. Fizess 500 Ft-ot.",
+        "37. Kitöltöttél egy keresztrejtvényt. Lépj előre két mezőt!",
+        "38. Élelmiszert vásároltál. Fizess 650 Ft-ot.",
+        "39. Kirándulást tettél a családoddal. Jutalmul dobhatsz még egyszer!",
+        "Start <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
+        ]
 
     function BabuMozgatas(lepesek) {
         JelenlegiPozicio += lepesek;
