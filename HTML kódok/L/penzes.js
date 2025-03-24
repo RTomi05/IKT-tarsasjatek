@@ -1,5 +1,6 @@
 
 const szovegek = [
+    "Start <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
     "1. Szemeteltél. Fizess 100 Ft-ot.",
     "2. Húzz egy szerencsekártyát!",
     "3. Takarékoskodj! Betéteid után 5% kamatot kapsz.",
@@ -38,9 +39,10 @@ const szovegek = [
     "36. Múzeumi látogatást tettél. Fizess 500 Ft-ot.",
     "37. Kitöltöttél egy keresztrejtvényt. Lépj előre két mezőt!",
     "38. Élelmiszert vásároltál. Fizess 650 Ft-ot.",
-    "39. Kirándulást tettél a családoddal. Jutalmul dobhatsz még egyszer!",
-    "Start <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
+    "39. Kirándulást tettél a családoddal. Jutalmul dobhatsz még egyszer!"
     ];
+
+let aktualis = 0;
 
 class Jatekos{
     constructor(nev,kep)
@@ -62,6 +64,9 @@ class Jatekos{
         {
             this.penz += 2000;
         }
+
+        document.getElementById("szovegHelye").innerHTML = szovegek[this.pozicio];
+
     }
     ugras(mezoSzam)
     {
@@ -76,21 +81,26 @@ class Jatekos{
     }
 }
 
+
 let jatekosok = [new Jatekos("Játékos1","./Kepek/kekbabu.png"), 
     new Jatekos("Játékos2","./Kepek/sargababu.png"), new Jatekos("Játékos3","./Kepek/pirosbabu.png")
 ];
 
 function kockadobas()
 {
-    return Math.floor(Math.random()*7);
+    return Math.floor(Math.random()*6)+1;
 }
 
+//jatekosok[0].leptet(kockadobas());
 
 
+function jatekosLep()
+{
+    jatekosok[aktualis].leptet(kockadobas());
+    console.log(jatekosok[aktualis].pozicio);
+}
 
-jatekosok[0].leptet(kockadobas());
-//console.log(jatekosok[0].pozicio);
-
+/*
 
 // Aktuális játékos indexe (0, 1, 2)
 let randomJatekosIndex = Math.floor(Math.random() * 3);
@@ -121,10 +131,10 @@ function kiirPenz() {
 }
 
 function konyvutalvany() {
-    /* ellenőrzés
+ ellenőrzés
     let mezoke = document.getElementsByClassName("M24");    
     console.log(`Van ${mezoke.length} M24-es mező!`);
-    */
+
 
 }
 
@@ -133,9 +143,9 @@ let JelenlegiPozicio = -1;
 let babu;
 
 document.addEventListener("DOMContentLoaded", () => {
-    /* Egyenlőre ez jó
+ Egyenlőre ez jó
     const mezo = document.querySelectorAll("[class^='M']");
-    */
+
     const mezo = [...document.querySelectorAll("[class^='M']")]; // NodeList átalakítása tömbbé
 
     // Új elem létrehozása és hozzáadása a listához
@@ -183,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Ekkora a dobás eredmény",DobasEredmeny)
         } 
         */
+       /*
         console.log(`Dobott szám: ${DobasEredmeny}`);
         BabuMozgatas(DobasEredmeny);
         console.log(`Új pozíció: ${JelenlegiPozicio +1}`);
