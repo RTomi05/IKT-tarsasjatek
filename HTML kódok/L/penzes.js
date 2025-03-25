@@ -93,11 +93,24 @@ function kockadobas()
 
 //jatekosok[0].leptet(kockadobas());
 
+document.getElementById("babu1").src = jatekosok[0].kep;
+document.getElementById("babu2").src = jatekosok[1].kep;
+document.getElementById("babu3").src = jatekosok[2].kep;
+
+
 
 function jatekosLep()
 {
+    
+    console.log(document.getElementById("babu1"))
+    console.log(jatekosok[aktualis].nev)
     jatekosok[aktualis].leptet(kockadobas());
     console.log(jatekosok[aktualis].pozicio);
+    aktualis++;
+    if(aktualis == 3)
+    {
+        aktualis = 0;
+    }
 }
 
 /*
