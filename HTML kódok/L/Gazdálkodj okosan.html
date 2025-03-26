@@ -16,10 +16,10 @@
 
     <div id="tabla">
 
-            <div class="start" >
-                    <img src="" alt="bábú" id="babu1" class="babu">
-                    <img src="" alt="bábú" id="babu2"class="babu">
-                    <img src="" alt="bábú" id="babu3" class="babu">
+            <div id="M0" >
+                    <img src="" alt="bábu" id="babu1" class="babu">
+                    <img src="" alt="bábu" id="babu3" class="babu">
+                    <img src="" alt="bábu" id="babu2"class="babu">
             </div>
 
 
@@ -28,6 +28,7 @@
 
     
     <div id="alsoBlokk">
+        <!--<div id="pozicioAdatok"></div>-->
         <div id="dobasGomb" ><button onclick="jatekosLep()" id="katt">Dobj a kockával!</button></div>
         <div id="szovegHelye"></div>
         <div id="szerencseKartyaH"></div>
@@ -47,13 +48,13 @@
                 if(szerencseMezok.includes(i))
                 {
                     tabla.innerHTML += `
-                    <div class="M${i} mezo szerencseMezo" >
+                    <div id="M${i}" class= "mezo szerencseMezo" >
                     </div>`
                 }
                 else
                 {
                     tabla.innerHTML += `
-                    <div class="M${i} mezo" >
+                    <div id="M${i}" class="mezo" >
                     </div>`
                 }
 

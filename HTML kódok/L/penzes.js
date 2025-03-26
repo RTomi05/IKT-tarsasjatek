@@ -45,12 +45,13 @@ const szovegek = [
 let aktualis = 0;
 
 class Jatekos{
-    constructor(nev,kep)
+    constructor(nev,kep,id)
     {
         this.nev = nev;
         this.kep = kep;
         this.penz = 6000;
         this.pozicio = 0;
+        this.id = id;
     }
     leptet(lepesSzam)
     {
@@ -65,8 +66,13 @@ class Jatekos{
             this.penz += 2000;
         }
 
+        document.getElementById("babu"+this.id).remove();
+
         document.getElementById("szovegHelye").innerHTML = szovegek[this.pozicio];
 
+        let mezoSzama = document.getElementById("M"+this.pozicio);
+
+        mezoSzama.innerHTML += "<img src='"+this.kep+"' alt='bábu' id='babu"+this.id+"' class='babu'>";
     }
     ugras(mezoSzam)
     {
@@ -82,8 +88,8 @@ class Jatekos{
 }
 
 
-let jatekosok = [new Jatekos("Játékos1","./Kepek/kekbabu.png"), 
-    new Jatekos("Játékos2","./Kepek/sargababu.png"), new Jatekos("Játékos3","./Kepek/pirosbabu.png")
+let jatekosok = [new Jatekos("Játékos1","./Kepek/kekbabu.png",1), 
+    new Jatekos("Játékos2","./Kepek/sargababu.png",2), new Jatekos("Játékos3","./Kepek/pirosbabu.png",3)
 ];
 
 function kockadobas()
@@ -104,8 +110,11 @@ function jatekosLep()
     
     console.log(document.getElementById("babu1"))
     console.log(jatekosok[aktualis].nev)
+
     jatekosok[aktualis].leptet(kockadobas());
+
     console.log(jatekosok[aktualis].pozicio);
+
     aktualis++;
     if(aktualis == 3)
     {
