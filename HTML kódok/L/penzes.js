@@ -42,6 +42,48 @@ const szovegek = [
     "39. Kirándulást tettél a családoddal. Jutalmul dobhatsz még egyszer!"
     ];
 
+const szerencsekartyak = [
+    "Ha már van lakásod, fizess gáz- és villanyszámlát: 500 Ft!",
+    "Lépj a 4. mezőre!",
+    "Rejtvénypályázaton utazást nyertél, lépj a 11. mezőre!",
+    "Kihajoltál a mozgó vonat ablakán. Egyszer kimaradsz a dobásból!",
+    "Édesanyádnak segítettél kistestvéred gondozásában. Jutalmul lépj előre két mezőt!",
+    "Lépj a 13. mezőre!",
+    "Lépj a START mezőre és vegyél fel 6.000 Ft-ot!",
+    "Nyereményjátékon szobabútort nyertél! Ha van már szobabútorod, megillet 25.000 Ft!",
+    "Nem zártad el a csapot, így a víz feleslegesen folyt. Egyszer kimaradsz a dobásból!",
+    "Kirándulásra indultál. Lépj előre két mezőt!",
+    "Lépj a 19. mezőre!",
+    "Lakásbiztosítást köthetsz: 900 Ft!",
+    "Borítékos sorsoláson 20.000 Ft-ot nyertél!",
+    "Kívánságkosárban rádiót nyertél! Ha van már rádiód, megillet 3.000 Ft!",
+    "Baleset ért. Ha van életbiztosításod, kapsz 3.000 Ft-ot!",
+    "Árleszállításon vásároltál, megspóroltál 1.500 Ft-ot!",
+    "A Hervis szervezésében Pingpong asztalt nyertél! Ha van már Pingpong asztalod, megillet 4.000 Ft!",
+    "A Bosch nyereményjátékán mosógépet nyertél! Ha van már mosógéped, megillet 8.000 Ft!",
+    "Ha van betétkönyved, kapsz 2.000 Ft-ot!",
+    "Nyertél a lottón. Kapsz 10.000 Ft-ot!",
+    "Betéteid kamatozása miatt vedd magadhoz a betéteid 20%-át!",
+    "Étteremben ebédelsz. Fizess 1000 Ft-ot!",
+    "Az Intersport kerékpárt ajándékoz neked! Ha van már kerékpárod, megillet 5.000 Ft!",
+    "Leugrottál a mozgó járműről. Háromszor kimaradsz a dobásból!",
+    "A Libritől könyvutalványt nyertél. Lépj a 24-es mezőre, és vedd át!",
+    "A Jysk nyereményjátékán konyhabútort nyertél! Ha van már konyhabútorod, megillet 20.000 Ft!",
+    "Ajándékot vásárolsz kistestvérednek. Fizess 1.300 Ft-ot!",
+    "Elmentél futni. Lépj előre két mezőt!",
+    "Társasházat vásárolhatsz. Lépj a 26-os mezőre!",
+    "A Samsung sorsolásán televíziót nyertél! Ha van már TV-d, megillet 12.000 Ft!",
+    "Ha van lakásod, vásárolhatsz berendezéseket. Lépj a 29-es mezőre!",
+    "Kibicsaklott a bokád, mert túl jó az út. Egyszer kimaradsz a dobásból!",
+    "A Blikk nyereményjátékán 5.000 Ft-ot nyertél!",
+    "Segítettél egy öreg néninek kertészkedni. Kapsz 800 Ft-ot!",
+    "Lépj a 18-as mezőre!",
+    "Lépj a 39-es mezőre!",
+    "Elhagytad a lakáskulcsod. Lépj vissza két mezőt!",
+    "Az Electrolux nyereményjátékán hűtőszekrényt nyertél! Ha van már hűtőd, megillet 9.000 Ft!",
+    "Lépj a 33-as mezőre!"
+    ];
+
 let aktualis = 0;
 
 class Jatekos{
@@ -97,7 +139,17 @@ document.getElementById("babu1").src = jatekosok[0].kep;
 document.getElementById("babu2").src = jatekosok[1].kep;
 document.getElementById("babu3").src = jatekosok[2].kep;
 
+//"d" betűre dobás (majd feltétel kell még az elejére, hogy ne okozzon ütközést, ha folyamatban van egy működés / függvény!)
 
+document.addEventListener("keyup", function(event)
+    {
+    if (event.key === "d")
+        {
+            event.preventDefault();
+            jatekosLep();
+        }
+    }
+);
 
 function jatekosLep()
 {
