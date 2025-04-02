@@ -111,7 +111,6 @@ class Jatekos{
         document.getElementById("babu"+this.id).remove();
 
         document.getElementById("szovegHelye").innerHTML = szovegek[this.pozicio];
-
         let mezoSzama = document.getElementById("M"+this.pozicio);
 
         mezoSzama.innerHTML += "<img src='"+this.kep+"' alt='bábu' id='babu"+this.id+"' class='babu'>";
@@ -126,6 +125,13 @@ class Jatekos{
         {
             this.leptet(40-this.pozicio+mezoSzam);
         }
+
+        document.getElementById("babu"+this.id).remove();
+
+        document.getElementById("szovegHelye").innerHTML = szovegek[this.pozicio];
+        let mezoSzama = document.getElementById("M"+this.pozicio);
+
+        mezoSzama.innerHTML += "<img src='"+this.kep+"' alt='bábu' id='babu"+this.id+"' class='babu'>";
     }
 }
 
@@ -167,11 +173,25 @@ function jatekosLep()
 
     console.log(jatekosok[aktualis].pozicio);
 
+    if(jatekosok[aktualis].pozicio == 1)
+    {
+        jatekosok[aktualis].penz -= 100; 
+    }
+    if(jatekosok[aktualis].pozicio == 12)
+    {
+        jatekosok[aktualis].ugras(14);
+    }
+
+
+
     aktualis++;
     if(aktualis == 3)
     {
         aktualis = 0;
     }
+
+    console.log(jatekosok[aktualis].penz);
+
 }
 
 /*
