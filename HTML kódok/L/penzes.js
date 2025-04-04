@@ -1,6 +1,6 @@
 
 const szovegek = [
-    "Start <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
+    "START <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
     "1. Szemeteltél. Fizess 100 Ft-ot.",
     "2. Húzz egy szerencsekártyát!",
     "3. Takarékoskodj! Betéteid után 5% kamatot kapsz.",
