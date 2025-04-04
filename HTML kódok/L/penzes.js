@@ -111,7 +111,6 @@ class Jatekos{
         document.getElementById("babu"+this.id).remove();
 
         document.getElementById("szovegHelye").innerHTML = szovegek[this.pozicio];
-
         let mezoSzama = document.getElementById("M"+this.pozicio);
 
         mezoSzama.innerHTML += "<img src='"+this.kep+"' alt='bábu' id='babu"+this.id+"' class='babu'>";
@@ -129,6 +128,13 @@ class Jatekos{
         {
             this.leptet(40-this.pozicio+mezoSzam);
         }
+
+        document.getElementById("babu"+this.id).remove();
+
+        document.getElementById("szovegHelye").innerHTML = szovegek[this.pozicio];
+        let mezoSzama = document.getElementById("M"+this.pozicio);
+
+        mezoSzama.innerHTML += "<img src='"+this.kep+"' alt='bábu' id='babu"+this.id+"' class='babu'>";
     }
 }
 
@@ -170,11 +176,22 @@ function jatekosLep()
 
     console.log(jatekosok[aktualis].pozicio);
 
+<<<<<<< HEAD
     console.log(aktualis);
     document.getElementById("aktualisJatekosAdatok").innerHTML = "Aktuális játékos: "+jatekosok[aktualis].nev
     +"<br>"+"Jelenlegi pozíció: "+jatekosok[aktualis].pozicio
     +"<br>"+"Jelenlegi pénz: "+jatekosok[aktualis].penz
     +" Ft"//"<br>"+"Következik: "+jatekosok[(aktualis = 3)? aktualis=1 : aktualis+1].nev;
+=======
+    if(jatekosok[aktualis].pozicio == 1)
+    {
+        jatekosok[aktualis].penz -= 100; 
+    }
+    if(jatekosok[aktualis].pozicio == 12)
+    {
+        jatekosok[aktualis].ugras(14);
+    }
+>>>>>>> 5c8e4bc2a9bf9ee4e8e54d4c1e2802d0a467ed2b
 
 
 
@@ -183,6 +200,9 @@ function jatekosLep()
     {
         aktualis = 0;
     }
+
+    console.log(jatekosok[aktualis].penz);
+
 }
 
 
