@@ -1,4 +1,3 @@
-
 const szovegek = [
     "START <br> Belépésnél: 6000 Ft <br> Áthaladásnál: 4000 Ft",
     "1. Szemeteltél. Fizess 100 Ft-ot.",
@@ -139,6 +138,8 @@ class Jatekos{
 }
 
 
+
+
 let jatekosok = [new Jatekos("Játékos1","./Kepek/kekbabu.png",1), 
     new Jatekos("Játékos2","./Kepek/sargababu.png",2), new Jatekos("Játékos3","./Kepek/pirosbabu.png",3)
 ];
@@ -203,8 +204,18 @@ function jatekosLep()
 
 }
 
-
 /*
+let jatekosok = [];
+
+function bekuldes()
+{
+    if(jatekosok.length <=3)
+    {
+        jatekosok.push(new Jatekos(document.getElementById("neved").value,"./Kepek/kekbabu.png",1));
+    }
+
+}
+
 
 // Aktuális játékos indexe (0, 1, 2)
 let randomJatekosIndex = Math.floor(Math.random() * 3);
